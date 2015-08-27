@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+<title>Oakwood Newsletter</title>
+<style>
+body {
+	background: #f5f3f0;
+	font: 10px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+h1 {
+	padding: 50px 0 0;
+	line-height: 1;
+	margin: 0 0 30px;
+}
+
+h2 {
+	font-size: 18px;
+	line-height: 1;
+	text-align: center;
+	margin: 0 0 35px;
+}
+
+h3 {
+	font-size: 14px;
+	margin: 25px 0 20px;
+}
+
+p {
+	font-size: 14px;
+	margin: 0 0 14px;
+}
+
+a {
+	color: #555;
+	font-weight: bold;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.sub-title {
+	font-size: 18px;
+	font-style: italic;
+	font-weight: normal;
+	line-height: 1;
+	text-align: center;
+	margin: 0 0 10px;
+}
+
+.main-title {
+	font-size: 32px;
+	line-height: 1;
+	text-align: center;
+	margin: 0 0 10px;
+}
+
+.leading {
+	max-width: 450px;
+	padding: 0 20px;
+	font-size: 18px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.icon {
+	text-align: center;
+	margin: 0 0 25px;
+}
+
+td {
+	text-align: left;
+	vertical-align: top;
+	padding: 0;
+}
+
+.main-table,
+.footer-table {
+	width: 700px;
+}
+
+.main-table {
+	max-width: 700px;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.footer-table {
+	margin: 0 auto;
+	max-width: 700px;
+	background: #242424;
+	color: #fff;
+}
+
+.footer-table p {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 0 20px;
+}
+
+.clear {
+	clear: both;
+}
+
+.heading {
+	max-width: 450px;
+	margin: 0 auto;
+}
+
+.column-wrap {
+	width: 650px;
+}
+
+.column {
+	float: left;
+	width: 320px;
+}
+
+.column img {
+	width: 100%;
+}
+
+.first-column {
+	margin-right: 10px;
+}
+
+.top-padding {
+	height: 60px;
+}
+
+@media only screen and (max-width: 480px) {
+	.main-table,
+	.footer-table {
+		width: 100% !important;
+	}
+
+	.column-wrap {
+		width: auto !important;
+	}
+
+	.column {
+		float: none !important;
+		width: auto !important;
+		padding: 0 20px !important;
+	}
+
+	.first-column {
+		margin-right: 0 !important;
+	}
+
+	.top-padding {
+		height: 20px !important;
+	}
+}
+</style>
+</head>
+<body>
+	<h1><img src="img/oakwood.png" alt="Oakwood Creative Digital Agency"></h1>
+	<table cellspacing="0" cellpadding="0" width="700" class="main-table">
+		<tr>
+			<td><img src="img/spacer.gif" width="25" alt=""></td>
+			<td><img src="img/spacer.gif" width="25" class="top-padding" alt=""></td>
+			<td><img src="img/spacer.gif" width="25" alt=""></td>
+		</tr>
+		<tr>
+			<td><img src="img/spacer.gif" width="25" alt=""></td>
+			<td>
+				<p class="leading"><singleline label="Title">Hi there. We thought it was about time we started a proper newsletter to let you know what’s going on at our agency. So, here it is. Grab a cup of coffee, snuggle up and have a read. Hope you like it.</singleline></p>
+						
+				<repeater>
+					<div class="heading">
+						<img src="img/line.gif" alt="">
+						<p class="icon"><img src="icons/1.png" alt="" editable width="84"></p>
+						<h2><singleline label="Title" repeatertitle='true'>Title</singleline></h2>
+					</div>
+					<div class="column-wrap">
+						<div class="column first-column">
+							<img src="content/spinnup.jpg" alt="" editable width="320">
+							<h3><singleline label="Title">Title</singleline></h3>
+							<p><multiline label="Article Body">Enter the full text</multiline></p>
+						</div>
+						<div class="column">
+							<img src="content/mtv.jpg" alt="" editable width="320">
+							<h3><singleline label="Title">Title</singleline></h3>
+							<p><multiline label="Article Body">Enter the full text</multiline></p>
+						</div>
+						<div class="clear"><!-- --></div>
+					</div>
+				</repeater>
+			</td>
+			<td><img src="img/spacer.gif" width="25" alt=""></td>
+		</tr>
+		<tr>
+			<td><img src="img/spacer.gif" width="25" alt=""></td>
+			<td><img src="img/spacer.gif" width="25" height="60" alt=""></td>
+			<td><img src="img/spacer.gif" width="25" alt=""></td>
+		</tr>
+	</table>
+	<table cellspacing="0" cellpadding="0" class="footer-table">
+		<tr><td><img src="img/spacer.gif" width="25" height="60" alt=""></td></tr>
+		<tr>
+			<td>
+				<p><singleline label="Title">Look, we're all over the internet.</singleline></p>
+				<p>
+					<a href="https://www.facebook.com/oakwoodcreative"><img src="img/facebook.png" alt="Facebook"></a>
+						&nbsp;
+						&nbsp;
+					<a href="https://twitter.com/oakwoodcreative"><img src="img/twitter.png" alt="Twitter"></a>
+						&nbsp;
+						&nbsp;
+					<a href="https://www.linkedin.com/company/oakwood-creative"><img src="img/linkedin.png" alt="LinkedIn"></a>
+				</p>
+				<p><a href="http://oakwood.se"><img src="img/oakwood-footer.png" alt=""></a></p>
+			</td>
+		</tr>
+		<tr><td><img src="img/spacer.gif" width="25" height="40" alt=""></td></tr>
+	</table>
+	<unsubscribe>Click here to unsubscribe</unsubscribe>
+</body>
+</html>
